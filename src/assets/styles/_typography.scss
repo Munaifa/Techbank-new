@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+@font-face {
+  font-family: $primary-font;
+  src: url('@/assets/fonts/Ninetea-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: $secondary-font;
+  src: url('@/assets/fonts/NYXERIN.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,38 @@
+$xs: "screen and (min-width:" + (320px) + ")";
+$sm: "screen and (min-width:" + (480px) + ")";
+$md: "screen and (min-width:" + (768px) + ")";
+$lg: "screen and (min-width:" + (950px) + ")";
+$xl: "screen and (min-width:" + (1199px) + ")";
+$xxl: "screen and (min-width:" + (1320px) + ")";
+$xxxl: "screen and (min-width:" + (1440px) + ")";
+$xxxxl: "screen and (min-width:" + (1800px) + ")";
+
+
+/* Font Family */
+$primary-font: "Ninetea";
+$secondary-font: "NYXERIN";
+
+/* Color Range*/
+
+$primary-color: #4a90e2;
+$black: #000;
+$white: #fff;
+$white-100: #FBFDFF3d;
+$bg-1: #1A1A1A;
+$bg-2: #474747;
+$bg-3: #2B2B2B;
+$text-color1: #4E4E4E;
+$text-color2: #BABABA;
+$text-color3: #C0C0C0;
+$text-color4: #E1C8FF;
+$text-color5: #BB83FF3D;
+$text-color6: #BB83FF;
+$text-color7: #C0C0C03D;
+
+/* Line height */
+
+$line-height-heading: 1.2;
+$line-height-heading-lg: 1.5;
+$line-height-body: 1.6;
+$line-height-paragraph: 1.75;
+

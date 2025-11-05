@@ -1,0 +1,47 @@
+@use "sass:math";
+@use 'variables' as *;
+
+
+@mixin flexbox(
+  $direction: row,
+  $justify: flex-start,
+  $align: stretch,
+  $mobile-direction: column,
+  $breakpoint: 768px
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  @media (max-width: $breakpoint) {
+    flex-direction: $mobile-direction;
+  }
+}
+
+$viewport: 1440;
+$bodySize: 16;
+$bodyFontSize: 16px;
+$design-width: 1440;
+
+@function vw($px, $base: $design-width) {
+  @if (unitless($px)) {
+    $px: $px * 1px;
+  }
+  @return math.div($px / 1px, $base) * 100vw;
+}
+
+
+@function rem($value) {
+    $newValue: calc($value / $bodySize * 1rem);
+    @return $newValue;
+}
+
+@function dvh($value) {
+  $base-height: 1080;
+  $newValue: calc(($value / $base-height) * 100dvh);
+  @return $newValue;
+}
+
+@function px2rem($px) {
+    @return calc($px / $bodyFontSize) * 1rem;
+}
