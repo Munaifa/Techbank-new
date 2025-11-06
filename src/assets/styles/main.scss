@@ -339,7 +339,7 @@
     @include flexbox(column, flex-end, center, column);
 
     @media #{$xxxxl} {
-      height: 80%;
+      height: 73%;
     }
 
     &__intro {
